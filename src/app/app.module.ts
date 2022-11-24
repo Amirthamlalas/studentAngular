@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StudentEntryComponent } from './student-entry/student-entry.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myroute : Routes =[
 
   {
-    path : "",
+    path :"",
     component : StudentEntryComponent
   }
 ]
@@ -17,11 +18,13 @@ const myroute : Routes =[
 @NgModule({
   declarations: [
     AppComponent,
-    StudentEntryComponent
+    StudentEntryComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myroute)
   ],
   providers: [],
   bootstrap: [AppComponent]
