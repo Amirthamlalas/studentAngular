@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ViewStudentComponent } from './view-student/view-student.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { SearchStudentComponent } from './search-student/search-student.component';
 
 const myroute : Routes =[
 
@@ -19,6 +20,10 @@ const myroute : Routes =[
   {
     path :"view",
     component : ViewStudentComponent
+  },
+  {
+    path :"search",
+    component : SearchStudentComponent
   }
 ]
 
@@ -27,7 +32,8 @@ const myroute : Routes =[
     AppComponent,
     StudentEntryComponent,
     NavbarComponent,
-    ViewStudentComponent
+    ViewStudentComponent,
+    SearchStudentComponent
   ],
   imports: [
     BrowserModule,
