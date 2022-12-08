@@ -5,21 +5,21 @@
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3">
-                <div class="col col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+               
 
                    
-                <div class="col col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4" *ngFor="let i of data">
                     <div class="card">
-                        <img  height="300px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8bPCvCFnU9mOBL2tK0eJLe7FJ2SocBQrHyBawj9hiUFZMaKlw8cJWqnbgtNqB9-zqwPw&usqp=CAU" class="card-img-top rounded-circle" alt="...">
+                        <img  height="300px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ93mWeJzvK0TctS6AjsdXP7vam792LC8XKxPyYixCuqw&s" class="card-img-top rounded-circle" alt="...">
                         <div class="card-body">
-                            <p class="card-text text-center">Name : </p>
-                            <p class="card-text text-center">Addmission NUMBER : 6547</p>
-                            <p class="card-text text-center">Roll Number : Jay</p>
-                            <p class="card-text text-center">College : Jay</p>
+                            <p class="card-text text-center">Name :{{i.name}} </p>
+                            <p class="card-text text-center">Addmission NUMBER : {{i.admno}}</p>
+                            <p class="card-text text-center">Roll Number : {{i.rollno}}</p>
+                            <p class="card-text text-center">College : {{i.college}}</p>
                         </div>
                       </div>
                 </div>
-            </div>
+           
         </div>
     </div>
 </div>
