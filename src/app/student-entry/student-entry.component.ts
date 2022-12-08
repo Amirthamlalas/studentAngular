@@ -9,25 +9,19 @@ export class StudentEntryComponent {
 
   name=""
   rollno=""
-  addmno=""
-  mob=""
+  admno=""
+ 
   college=""
-  parent=""
-  parentphn=""
-  username=""
-  password=""
+ 
 
   entry=()=>{
     let data:any={
       "name":this.name,
       "rollno":this.rollno,
-      "addmno":this.addmno,
-      "mob":this.mob,
+      "addmno":this.admno,
+      
       "college":this.college,
-      "parent":this.parent,
-      "parentphn":this.parentphn,
-      "username":this.username,
-      "password":this.password
+     
     
     }
     console.log(data)
